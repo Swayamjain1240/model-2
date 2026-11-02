@@ -55,8 +55,17 @@ document context and will return citations for important claims.
 ## Documentation
 
 - [Problem Statement](docs/01-problem-statement.md)
+- [System Design](docs/02-system-design.md)
+- [Software Design](docs/03-software-design.md)
+- [Technical Design](docs/04-technical-design.md)
+- [Software Requirements](docs/05-software-requirements.md)
+- [Architecture](docs/06-architecture.md)
+- [Project Documentation](docs/07-project-documentation.md)
+- [Engineering Design](docs/08-engineering-design.md)
+- [RFC: Hybrid Retrieval and Re-ranking](docs/09-rfc-hybrid-retrieval.md)
+- [Solution Design](docs/10-solution-design.md)
 
-More design and implementation documents will be added as the project grows.
+Additional design and implementation documents will be added as the project grows.
 
 ## Project Status
 
