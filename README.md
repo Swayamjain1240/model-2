@@ -69,10 +69,33 @@ Additional design and implementation documents will be added as the project grow
 
 ## Project Status
 
-**Current stage:** Planning and MVP documentation
+**Current stage:** Phase 1 foundation implementation
 
-The implementation will be developed incrementally, beginning with the basic
-RAG pipeline and then adding production-oriented engineering capabilities.
+The implementation is developed incrementally, beginning with the foundation
+and then adding document ingestion, retrieval, generation, and measured
+production-oriented engineering capabilities.
+
+## Local Development
+
+Install dependencies, create the local schema, and run the API:
+
+```text
+python -m pip install -e ".[dev]"
+alembic upgrade head
+uvicorn app.main:app --reload
+```
+
+Run the quality checks:
+
+```text
+ruff check app scripts tests
+ruff format --check app scripts tests
+python scripts/check_line_limits.py
+pytest
+```
+
+See [Phase 1 Foundation](docs/11-phase-1-foundation.md) for the current
+implementation status and API endpoints.
 
 ## Repository Structure
 
